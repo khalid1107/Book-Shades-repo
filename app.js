@@ -21,7 +21,7 @@ const searchresult = () => {
     error("block");
   } else {
     error("none");
-    const url = `http://openlibrary.org/search.json?q=${fieldValue}`;
+    const url = `https://openlibrary.org/search.json?q=${fieldValue}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => DisplayBooks(data));
